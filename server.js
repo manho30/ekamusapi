@@ -33,6 +33,12 @@ async function constructEkamusApiServer() {
     })
 
     /**
+     * Register static files
+     */
+    app.use('/', express.static(path.join(__dirname, 'public')))
+
+
+    /**
      * Body Parser
      */
     app.use(express.json())
@@ -47,12 +53,16 @@ async function constructEkamusApiServer() {
         }
     });
 
+    app.get('*', (req, res) => {
+        res.status(404).send('Not Found');
+    })
+
     return app
 
 }
 
 async function serveEkamusApi() {
-    const port = process.env.PORT || 3000;
+    const port = process.env.PORT || 3456;
     const host = process.env.HOST || 'localhost';
 
     const app = await constructEkamusApiServer();

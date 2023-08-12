@@ -24,7 +24,7 @@ router.get('/search', async (req, res) => {
     }
     const result = await scraper.getWordList(await scraper.getHtmlContent(q));
     const response = await respond.search_respond(result, q);
-    res.send(response);
+    res.status(200).send(response);
 });
 
 module.exports = router;
