@@ -8,5 +8,10 @@
     "pac-proxy-agent": "^7.0.0",
     "safe-decode-uri-component": "^1.2.1",
     "tunnel": "^0.0.6"
-  }
+  },
+    "description": "API for ekamus",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    }
 }
