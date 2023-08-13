@@ -33,9 +33,9 @@ async function constructEkamusApiServer() {
     })
 
     /**
-     * Register static files
+     * Register static filesn ./index.html
      */
-    app.use('/', express.static(path.join(__dirname, 'public')))
+    app.use(express.static(path.join(__dirname, 'public')))
 
 
     /**
