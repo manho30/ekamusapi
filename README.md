@@ -2,7 +2,7 @@
 
 The eKamus API is a web scraping API designed to provide translation and definition services from Bahasa Malaysia (BM) to Chinese (CN) languages. This API scrapes data from the Ekamus website to retrieve word definitions and translations. Developers can utilize this API to integrate Bahasa Malaysia dictionary functionality into their applications.
 
-API LIVE URL: https://ekamus.api.manho.xyz
+API LIVE URL: https://ekamusapi.manho.xyz
 
 Table of Contents
 
